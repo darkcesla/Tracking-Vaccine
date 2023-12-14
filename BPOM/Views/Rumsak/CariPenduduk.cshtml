@@ -1,0 +1,46 @@
+﻿
+@{
+    ViewBag.Title = "CariPenduduk";
+    Layout = "~/Views/_LayoutPage2Rumsak.cshtml";
+}
+
+<h1>Daftar Penduduk</h1>
+@using (Html.BeginForm("cari", "rumsak"))
+{
+    <div class="">
+        <span>
+            Keyword by : <input type="radio" name="condition" value="byIdAkun" checked="checked" /> <span class="badge badge-warning">ID Akun </span>
+            <input type="radio" name="condition" value="byNama" /><span class="badge badge-danger">Nama </span>
+            <input type="radio" name="condition" value="byNIK" /><span class="badge badge-dark">NIK </span>
+        </span>
+    </div><br />
+    <input type="text" name="keyword" />
+    <input class="btn btn-success" type="submit" value="Cari" />
+    <br /><br />
+}
+<div>
+    @using (Html.BeginForm("CariPenduduk", "rumsak"))
+    {
+        <input class="btn btn-danger" type="submit" value="Tampilkan Semua" />
+    }
+</div>
+<br />
+<table class="table">
+    <tr class="badge-dark">
+        <th class="badge-light border-danger">ID Akun</th>
+        <th class="badge-light border-secondary">Nama</th>
+        <th class="badge-light border-dark">Nomor Induk Kependudukan</th>
+        <th class="badge-light border-primary">Username</th>
+    </tr>
+    @foreach (var penduduk in ViewBag.listPenduduk)
+    {
+        <tr class="badge-light">
+            <td class="badge-dark">@penduduk.id_akun</td>
+            <td class="badge-dark">@penduduk.nama</td>
+            <td class="badge-dark">@penduduk.nik</td>
+            <td class="badge-dark">@penduduk.username</td>
+        </tr>
+    }
+
+</table>
+

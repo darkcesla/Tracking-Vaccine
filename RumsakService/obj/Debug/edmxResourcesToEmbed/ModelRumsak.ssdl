@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TrackingVaccine_05Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="pembelian_rumsak">
+    <Key>
+      <PropertyRef Name="id_pembelian_rumsak" />
+    </Key>
+    <Property Name="id_pembelian_rumsak" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="vaksin_id" Type="int" Nullable="false" />
+    <Property Name="laporan" Type="varchar" MaxLength="225" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="TrackingVaccine_05ModelStoreContainer">
+    <EntitySet Name="pembelian_rumsak" EntityType="Self.pembelian_rumsak" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

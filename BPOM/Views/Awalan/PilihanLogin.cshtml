@@ -1,0 +1,42 @@
+﻿
+@{
+    ViewBag.Title = "PilihanLogin";
+    Layout = "~/Views/_LayoutPage1.cshtml";
+}
+
+<div class="login-form">
+    <div class="top-login">
+        <span><img src="~/assets/LP1/images/BPOMLogo.png" alt="" /></span>
+    </div>
+    <h1>Tracking Vaccine</h1>
+    <div class="login-top">
+        <form action="Verify" method="post">
+            <div class="log-bwn">
+                <br /><hr />
+                <button class="btn myButton" style="width:100px;background-color:wheat;">
+                    @Html.ActionLink("BPOM", "../BPOM/Login")
+                </button>
+                <br /><hr />
+                <button class="btn myButton" style="width:100px;background-color:wheat;">
+                    @Html.ActionLink("Produsen", "../Produsen/Login")
+                </button><br /><hr />
+                <button class="btn myButton" style="width:100px;background-color:wheat;">
+                    @Html.ActionLink("Rumah Sakit", "../Rumsak/Login")
+                </button>
+                <br /><hr />
+                <button class="btn myButton" style="width:100px;background-color:wheat;">
+                    @Html.ActionLink("Pasien", "../Pasien/Login")
+                </button>
+                <br /><hr />
+                <button class="btn myButton" style="width:110px;background-color:wheat;">
+                    @Html.ActionLink("Pemerintah", "../Pemerintah/Login")
+                </button>
+                <br /><hr />
+
+
+            </div>
+        </form>
+    </div>
+    <p class="copy">© 2016 Square Login Form. All rights reserved | Design by  <a href="http://w3layouts.com/" target="_blank">W3layouts</a></p>
+</div>
+

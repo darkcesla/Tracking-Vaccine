@@ -1,0 +1,68 @@
+﻿@model BPOM.daftar_vaksin
+
+@{
+    ViewBag.Title = "Edit Vaksin BPOM";
+    Layout = "~/Views/_LayoutPage2.cshtml";
+}
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        <h4>Validasi Vaksin (@Html.DisplayFor(model => model.id_registrasi) / @Html.DisplayFor(model => model.nama_vaksin))</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        @Html.HiddenFor(model => model.id_vaksin)
+
+        <div class="form-group"><div class="col-md-10">
+                @Html.HiddenFor(model => model.id_registrasi, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.id_registrasi, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group"><div class="col-md-10">
+                @Html.HiddenFor(model => model.nama_vaksin, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.nama_vaksin, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-10">
+                @Html.HiddenFor(model => model.jenis_vaksin, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.jenis_vaksin, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-10">
+                @Html.HiddenFor(model => model.jumlah, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.jumlah, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-10">
+                <b>ID Registrasi</b> ( <b><i> <u>Layak Pakai</u> / <u>Belum Layak Pakai</u></i></b> ) => Ketik
+            </div>
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.status_vaksin, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.status_vaksin, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "HomeVaksin")
+</div>
+
+<script src="~/Scripts/jquery-3.4.1.min.js"></script>
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>

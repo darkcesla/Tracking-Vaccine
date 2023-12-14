@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewBag.Title = "Laporlaporan";
+    Layout = "~/Views/_LayoutPage2Rumsak.cshtml";
+}
+
+<h1>List laporan Valid</h1>
+@using (Html.BeginForm("TambahLaporan", "Rumsak"))
+{
+    <input class="btn btn-success" type="submit" value="Tambah Laporan" />
+}
+<br>
+<table class="table">
+    <tr class="badge-dark">
+        <th class="badge-light border-danger">ID Laporan</th>
+        <th class="badge-light border-danger">ID Vaksin</th>
+        <th class="badge-light border-secondary">Isi Laporan</th>
+    </tr>
+    @foreach (var laporan in ViewBag.listLaporan)
+    {
+        <tr class="badge-light">
+            <td class="badge-dark">@laporan.id_pembelian_rumsak</td>
+            <td class="badge-dark">@laporan.vaksin_id</td>
+            <td class="badge-dark">@laporan.laporan</td>
+        </tr>
+    }
+
+</table>

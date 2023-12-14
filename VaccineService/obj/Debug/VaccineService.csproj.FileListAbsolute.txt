@@ -1,0 +1,11 @@
+D:\Perkuliahan\Semester 4\TekNET\AppTrackingVaccine_05\AppTrackingVaccine_05\VaccineService\bin\VaccineService.dll.config
+D:\Perkuliahan\Semester 4\TekNET\AppTrackingVaccine_05\AppTrackingVaccine_05\VaccineService\bin\VaccineService.dll
+D:\Perkuliahan\Semester 4\TekNET\AppTrackingVaccine_05\AppTrackingVaccine_05\VaccineService\bin\VaccineService.pdb
+D:\Perkuliahan\Semester 4\TekNET\AppTrackingVaccine_05\AppTrackingVaccine_05\VaccineService\bin\EntityFramework.dll
+D:\Perkuliahan\Semester 4\TekNET\AppTrackingVaccine_05\AppTrackingVaccine_05\VaccineService\bin\EntityFramework.SqlServer.dll
+D:\Perkuliahan\Semester 4\TekNET\AppTrackingVaccine_05\AppTrackingVaccine_05\VaccineService\bin\EntityFramework.xml
+D:\Perkuliahan\Semester 4\TekNET\AppTrackingVaccine_05\AppTrackingVaccine_05\VaccineService\bin\EntityFramework.SqlServer.xml
+D:\Perkuliahan\Semester 4\TekNET\AppTrackingVaccine_05\AppTrackingVaccine_05\VaccineService\obj\Debug\VaccineService.csproj.CoreCompileInputs.cache
+D:\Perkuliahan\Semester 4\TekNET\AppTrackingVaccine_05\AppTrackingVaccine_05\VaccineService\obj\Debug\VaccineService.csproj.CopyComplete
+D:\Perkuliahan\Semester 4\TekNET\AppTrackingVaccine_05\AppTrackingVaccine_05\VaccineService\obj\Debug\VaccineService.dll
+D:\Perkuliahan\Semester 4\TekNET\AppTrackingVaccine_05\AppTrackingVaccine_05\VaccineService\obj\Debug\VaccineService.pdb

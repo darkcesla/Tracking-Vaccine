@@ -1,0 +1,48 @@
+﻿@model BPOM.daftar_vaksin
+
+@{
+    ViewBag.Title = "DeleteVaksin";
+    Layout = "~/Views/_LayoutPage2Produsen.cshtml";
+}
+
+
+<div>
+    <h4>Yakin Hapus Vaksin (@Html.DisplayFor(model => model.id_registrasi) / @Html.DisplayFor(model => model.nama_vaksin)) ? </h4>
+    <hr />
+
+    <div class="form-group">
+        <div class="col-md-10">
+            <b>ID Registrasi</b> => <i>@Html.DisplayFor(model => model.id_registrasi)</i>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-md-10">
+            <b>Nama Vaksin</b> => <i>@Html.DisplayFor(model => model.nama_vaksin)</i>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-md-10">
+            <b>Jumlah Vaksin</b> => <i> @Html.DisplayFor(model => model.jumlah)</i>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-md-10">
+            <b>Status Vaksin</b> => <i>@Html.DisplayFor(model => model.status_vaksin)</i>
+        </div>
+    </div>
+
+
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Hapus" class="btn btn-success" /> |
+            <p class="btn btn-outline-danger">@Html.ActionLink("Tidak", "HomeVaksin")</p>
+        </div>
+    }
+</div>

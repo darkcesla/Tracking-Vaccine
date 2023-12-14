@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="TrackingVaccine_05" Class="DataClassesDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=lumbanraja1807\LUMBANRAJA;Initial Catalog=TrackingVaccine_05;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="TrackingVaccine_05ConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.akun" Member="akuns">
+    <Type Name="akun">
+      <Column Name="id_akun" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="username" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="PASSWORD" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="role" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="akun_pembelian_vaksin" Member="pembelian_vaksins" ThisKey="id_akun" OtherKey="id_akun" Type="pembelian_vaksin" />
+      <Association Name="role_akun" Member="role1" ThisKey="role" OtherKey="id_role" Type="role" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.role" Member="roles">
+    <Type Name="role">
+      <Column Name="id_role" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="nama_role" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Association Name="role_akun" Member="akuns" ThisKey="id_role" OtherKey="role" Type="akun" />
+      <Association Name="role_akun_pasien" Member="akun_pasiens" ThisKey="id_role" OtherKey="role" Type="akun_pasien" />
+    </Type>
+  </Table>
+  <Table Name="dbo.akun_pasien" Member="akun_pasiens">
+    <Type Name="akun_pasien">
+      <Column Name="id_akun" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="nama" Type="System.String" DbType="VarChar(25) NOT NULL" CanBeNull="false" />
+      <Column Name="nik" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="username" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="password" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="role" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="role_akun_pasien" Member="role1" ThisKey="role" OtherKey="id_role" Type="role" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.daftar_vaksin" Member="daftar_vaksins">
+    <Type Name="daftar_vaksin">
+      <Column Name="id_vaksin" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="id_registrasi" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="nama_vaksin" Type="System.String" DbType="VarChar(225) NOT NULL" CanBeNull="false" />
+      <Column Name="jenis_vaksin" Type="System.String" DbType="VarChar(225) NOT NULL" CanBeNull="false" />
+      <Column Name="jumlah" Type="System.String" DbType="VarChar(225) NOT NULL" CanBeNull="false" />
+      <Column Name="status_vaksin" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.pembelian_vaksin" Member="pembelian_vaksins">
+    <Type Name="pembelian_vaksin">
+      <Column Name="id_pembelian" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="id_akun" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="nama" Type="System.String" DbType="VarChar(225) NOT NULL" CanBeNull="false" />
+      <Column Name="jumlah" Type="System.String" DbType="VarChar(225) NOT NULL" CanBeNull="false" />
+      <Column Name="alamat" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Association Name="akun_pembelian_vaksin" Member="akun" ThisKey="id_akun" OtherKey="id_akun" Type="akun" IsForeignKey="true" DeleteRule="CASCADE" />
+    </Type>
+  </Table>
+</Database>

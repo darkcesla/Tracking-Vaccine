@@ -1,0 +1,59 @@
+﻿@model IEnumerable<BPOM.daftar_vaksin>
+
+@{
+    ViewBag.Title = "HomeVaksin";
+    Layout = "~/Views/_LayoutPage2Produsen.cshtml";
+}
+
+<button class="btn btn-default btn-outline-success">
+    <p>
+        @Html.ActionLink("Lapor Vaksin", "CreateVaksin")
+    </p>
+</button>
+<hr />
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.id_registrasi)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.nama_vaksin)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.jenis_vaksin)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.jumlah)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.status_vaksin)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.id_registrasi)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.nama_vaksin)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.jenis_vaksin)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.jumlah)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.status_vaksin)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "EditVaksin", new { id=item.id_vaksin }) |
+            @Html.ActionLink("Detail", "DetailsVaksin", new { id=item.id_vaksin }) |
+            @Html.ActionLink("Hapus", "DeleteVaksin", new { id=item.id_vaksin })
+        </td>
+    </tr>
+}
+
+</table>

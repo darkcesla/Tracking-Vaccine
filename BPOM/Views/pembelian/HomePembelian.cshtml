@@ -1,0 +1,53 @@
+﻿@model IEnumerable<BPOM.pembelian_vaksin>
+
+@{
+    ViewBag.Title = "HomePembelian";
+    Layout = "~/Views/_LayoutPage2.cshtml";
+}
+
+<div class="btn btn-default">
+    <p>
+        @Html.ActionLink("Tambah Data", "CreatePembelian")
+    </p>
+</div>
+<hr/>
+    
+    <table class="table">
+        <tr>
+            <th>
+                Nama
+            </th>
+            <th>
+               Jumlah Vaksin
+            </th>
+            <th>
+                Alamat
+            </th>
+            <th>
+                Aksi
+            </th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.nama)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.jumlah)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.alamat)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "EditPembelian", new { id = item.id_pembelian }) |
+                    @Html.ActionLink("Details", "DetailsPembelian", new { id = item.id_pembelian }) |
+                    @Html.ActionLink("Delete", "DeletePembelian", new { id = item.id_pembelian })
+                </td>
+            </tr>
+        }
+
+    </table>
+
+

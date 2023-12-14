@@ -1,0 +1,71 @@
+﻿@model BPOM.daftar_vaksin
+
+@{
+    ViewBag.Title = "CreateVaksin";
+    Layout = "~/Views/_LayoutPage2Produsen.cshtml";
+}
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <h4>Buat Laporan Vaksin</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            <div class="col-md-10">
+                ID Registras Vaksin
+            </div>
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.id_registrasi, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.id_registrasi, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-10">
+                Nama Vaksin
+            </div>
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.nama_vaksin, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.nama_vaksin, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-10">
+                Jenis Vaksin
+            </div>
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.jenis_vaksin, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.jenis_vaksin, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-10">
+                Jumlah Vaksin
+            </div>
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.jumlah , new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.jumlah, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Buat" class="btn btn-outline-success" />
+            </div>
+        </div>
+    </div>
+}
+<div class="col-md-10">
+    <div class="btn btn-outline-primary">
+        @Html.ActionLink("Kembali", "HomeVaksin")
+    </div>
+</div>
+
+<script src="~/Scripts/jquery-3.4.1.min.js"></script>
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>

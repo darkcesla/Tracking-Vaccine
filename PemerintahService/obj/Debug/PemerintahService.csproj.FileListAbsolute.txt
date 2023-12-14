@@ -1,0 +1,12 @@
+D:\Perkuliahan\Semester 4\TekNET\AppTrackingVaccine_05\AppTrackingVaccine_05\PemerintahService\bin\PemerintahService.dll.config
+D:\Perkuliahan\Semester 4\TekNET\AppTrackingVaccine_05\AppTrackingVaccine_05\PemerintahService\bin\PemerintahService.dll
+D:\Perkuliahan\Semester 4\TekNET\AppTrackingVaccine_05\AppTrackingVaccine_05\PemerintahService\bin\PemerintahService.pdb
+D:\Perkuliahan\Semester 4\TekNET\AppTrackingVaccine_05\AppTrackingVaccine_05\PemerintahService\bin\EntityFramework.dll
+D:\Perkuliahan\Semester 4\TekNET\AppTrackingVaccine_05\AppTrackingVaccine_05\PemerintahService\bin\EntityFramework.SqlServer.dll
+D:\Perkuliahan\Semester 4\TekNET\AppTrackingVaccine_05\AppTrackingVaccine_05\PemerintahService\bin\EntityFramework.xml
+D:\Perkuliahan\Semester 4\TekNET\AppTrackingVaccine_05\AppTrackingVaccine_05\PemerintahService\bin\EntityFramework.SqlServer.xml
+D:\Perkuliahan\Semester 4\TekNET\AppTrackingVaccine_05\AppTrackingVaccine_05\PemerintahService\obj\Debug\PemerintahService.csproj.CoreCompileInputs.cache
+D:\Perkuliahan\Semester 4\TekNET\AppTrackingVaccine_05\AppTrackingVaccine_05\PemerintahService\obj\Debug\PemerintahService.csproj.CopyComplete
+D:\Perkuliahan\Semester 4\TekNET\AppTrackingVaccine_05\AppTrackingVaccine_05\PemerintahService\obj\Debug\PemerintahService.dll
+D:\Perkuliahan\Semester 4\TekNET\AppTrackingVaccine_05\AppTrackingVaccine_05\PemerintahService\obj\Debug\PemerintahService.pdb
+D:\Perkuliahan\Semester 4\TekNET\AppTrackingVaccine_05\AppTrackingVaccine_05\PemerintahService\obj\Debug\PemerintahService.csprojAssemblyReference.cache

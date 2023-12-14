@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="TrackingVaccine_05ModelStoreContainer" CdmEntityContainer="TrackingVaccine_05Entities">
+    <EntitySetMapping Name="akun">
+      <EntityTypeMapping TypeName="TrackingVaccine_05Model.akun">
+        <MappingFragment StoreEntitySet="akun">
+          <ScalarProperty Name="id_akun" ColumnName="id_akun" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="PASSWORD" ColumnName="PASSWORD" />
+          <ScalarProperty Name="role" ColumnName="role" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

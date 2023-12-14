@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="TrackingVaccine_05ModelStoreContainer" CdmEntityContainer="RumsakEntities">
+    <EntitySetMapping Name="pembelian_rumsak">
+      <EntityTypeMapping TypeName="TrackingVaccine_05Model.pembelian_rumsak">
+        <MappingFragment StoreEntitySet="pembelian_rumsak">
+          <ScalarProperty Name="id_pembelian_rumsak" ColumnName="id_pembelian_rumsak" />
+          <ScalarProperty Name="vaksin_id" ColumnName="vaksin_id" />
+          <ScalarProperty Name="laporan" ColumnName="laporan" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

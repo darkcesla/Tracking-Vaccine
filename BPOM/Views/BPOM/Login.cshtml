@@ -1,0 +1,33 @@
+﻿0
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/_LayoutPage1.cshtml";
+}
+
+<!--header start here-->
+<div class="login-form">
+    <div class="top-login">
+        <span><img src="~/assets/LP1/images/BPOMLogo.png" alt="" /></span>
+    </div>
+    <h1>Login</h1>
+    <div class="login-top">
+        <form action="Verify" method="post">
+            <div class="login-ic">
+                <i></i>
+                <input type="text" name="username" value="Username" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'User name';}" />
+                <div class="clear"> </div>
+            </div>
+            <div class="login-ic">
+                <i class="icon"></i>
+                <input type="password" name="password" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'password';}" />
+                <div class="clear"> </div>
+            </div>
+
+            <div class="log-bwn">
+                <input type="submit" value="Login">
+            </div>
+        </form>
+    </div>
+    <p class="copy">© 2016 Square Login Form. All rights reserved | Design by  <a href="http://w3layouts.com/" target="_blank">W3layouts</a></p>
+</div>
+<!--header start here-->

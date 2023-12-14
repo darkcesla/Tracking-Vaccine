@@ -1,0 +1,38 @@
+﻿@model BPOM.pembelian_vaksin
+
+@{
+    ViewBag.Title = "DetailsPembelian";
+
+    Layout = "~/Views/_LayoutPage2.cshtml";
+}
+
+<div>
+    <h4>Detail Pembelian @Html.DisplayFor(model => model.nama) </h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.jumlah)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.jumlah)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.alamat)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.alamat)
+        </dd>
+
+    </dl>
+</div>
+<div class="col-md-10">
+    <div class="btn btn-outline-success">
+        @Html.ActionLink("Edit", "EditPembelian", new { id = Model.id_pembelian })
+    </div>
+    <div class="btn btn-outline-primary">
+        @Html.ActionLink("Kembali", "Index")
+    </div>
+</div>

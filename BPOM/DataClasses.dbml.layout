@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 10.25" name="DataClasses">
+  <DataContextMoniker Name="/DataClassesDataContext" />
+  <nestedChildShapes>
+    <classShape Id="3cabf6f4-418a-4c2b-863d-ab2b4eed1250" absoluteBounds="3.375, 2.375, 2, 1.5785953776041664">
+      <DataClassMoniker Name="/DataClassesDataContext/akun" />
+      <nestedChildShapes>
+        <elementListCompartment Id="19cf0d55-89cb-4075-892c-7433d0e9e757" absoluteBounds="3.39, 2.835, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8b421474-e293-436b-a7a7-74c47f4cb60b" absoluteBounds="0.625, 4, 2, 1.1939925130208335">
+      <DataClassMoniker Name="/DataClassesDataContext/role" />
+      <nestedChildShapes>
+        <elementListCompartment Id="46fa56a9-42bf-4bfd-8b41-91520df481ae" absoluteBounds="0.64, 4.46, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a2fbef07-ffbd-41fe-b826-5a6ce0703670" absoluteBounds="3.375, 4.875, 2, 1.9631982421875005">
+      <DataClassMoniker Name="/DataClassesDataContext/akun_pasien" />
+      <nestedChildShapes>
+        <elementListCompartment Id="78ac2373-fc9d-413f-b0f9-8dd11b4e0a30" absoluteBounds="3.39, 5.335, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a8c325a6-f11c-4db9-8212-268bf3cec376" absoluteBounds="0.625, 8, 2, 1.9631982421875005">
+      <DataClassMoniker Name="/DataClassesDataContext/daftar_vaksin" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0f50e340-c29c-4b96-b318-505111a09c29" absoluteBounds="0.64, 8.46, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="996ffc1f-3df4-4c25-8f96-c21d32eb5136" absoluteBounds="6.125, 2.25, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/DataClassesDataContext/pembelian_vaksin" />
+      <nestedChildShapes>
+        <elementListCompartment Id="54edc09f-43dc-4ada-9538-a17f5628aa92" absoluteBounds="6.14, 2.71, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(1.625 : 4); (1.625 : 3.16429768880208); (3.375 : 3.16429768880208)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataClassesDataContext/role/role_akun" />
+      <nodes>
+        <classShapeMoniker Id="8b421474-e293-436b-a7a7-74c47f4cb60b" />
+        <classShapeMoniker Id="3cabf6f4-418a-4c2b-863d-ab2b4eed1250" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.625 : 5.03449625651042); (3.375 : 5.03449625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataClassesDataContext/role/role_akun_pasien" />
+      <nodes>
+        <classShapeMoniker Id="8b421474-e293-436b-a7a7-74c47f4cb60b" />
+        <classShapeMoniker Id="a2fbef07-ffbd-41fe-b826-5a6ce0703670" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.375 : 3.16429768880208); (6.125 : 3.16429768880208)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataClassesDataContext/akun/akun_pembelian_vaksin" />
+      <nodes>
+        <classShapeMoniker Id="3cabf6f4-418a-4c2b-863d-ab2b4eed1250" />
+        <classShapeMoniker Id="996ffc1f-3df4-4c25-8f96-c21d32eb5136" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

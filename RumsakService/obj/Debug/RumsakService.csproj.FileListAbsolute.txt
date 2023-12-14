@@ -1,0 +1,12 @@
+D:\Perkuliahan\Semester 4\TekNET\AppTrackingVaccine_05\AppTrackingVaccine_05\RumsakService\bin\RumsakService.dll.config
+D:\Perkuliahan\Semester 4\TekNET\AppTrackingVaccine_05\AppTrackingVaccine_05\RumsakService\bin\RumsakService.dll
+D:\Perkuliahan\Semester 4\TekNET\AppTrackingVaccine_05\AppTrackingVaccine_05\RumsakService\bin\RumsakService.pdb
+D:\Perkuliahan\Semester 4\TekNET\AppTrackingVaccine_05\AppTrackingVaccine_05\RumsakService\bin\EntityFramework.dll
+D:\Perkuliahan\Semester 4\TekNET\AppTrackingVaccine_05\AppTrackingVaccine_05\RumsakService\bin\EntityFramework.SqlServer.dll
+D:\Perkuliahan\Semester 4\TekNET\AppTrackingVaccine_05\AppTrackingVaccine_05\RumsakService\bin\EntityFramework.xml
+D:\Perkuliahan\Semester 4\TekNET\AppTrackingVaccine_05\AppTrackingVaccine_05\RumsakService\bin\EntityFramework.SqlServer.xml
+D:\Perkuliahan\Semester 4\TekNET\AppTrackingVaccine_05\AppTrackingVaccine_05\RumsakService\obj\Debug\RumsakService.csproj.CoreCompileInputs.cache
+D:\Perkuliahan\Semester 4\TekNET\AppTrackingVaccine_05\AppTrackingVaccine_05\RumsakService\obj\Debug\RumsakService.csproj.CopyComplete
+D:\Perkuliahan\Semester 4\TekNET\AppTrackingVaccine_05\AppTrackingVaccine_05\RumsakService\obj\Debug\RumsakService.dll
+D:\Perkuliahan\Semester 4\TekNET\AppTrackingVaccine_05\AppTrackingVaccine_05\RumsakService\obj\Debug\RumsakService.pdb
+D:\Perkuliahan\Semester 4\TekNET\AppTrackingVaccine_05\AppTrackingVaccine_05\RumsakService\obj\Debug\RumsakService.csprojAssemblyReference.cache

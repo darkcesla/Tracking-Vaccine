@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <title>@ViewBag.Title</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="~/assets/LP2/css/style-starter.css" rel="stylesheet" />
+
+    <!-- web fonts -->
+    <link href="//fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- header -->
+    <header class="w3l-header">
+        <div class="hero-header-11">
+            <div class="hero-header-11-content">
+                <div class="container">
+                    <nav class="navbar navbar-expand-xl navbar-light py-sm-2 py-1 px-0">
+                        <a class="navbar-brand" href="#index.html">
+                            <img src="~/assets/LP1/images/BPOMLogo.png" alt="Your logo" title="Your logo" style="height:35px;" />
+                        </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon fa fa-bars"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item btn btn-outline-secondary">
+                                        @Html.ActionLink("Home", "Index")
+                                </li>
+                                <li class="nav-item btn btn-outline-success">
+                                        @Html.ActionLink("Pembelian", "HomePembelian")
+                                </li>
+                                <li class="nav-item btn btn-outline-danger">
+                                        @Html.ActionLink("Logout", "../BPOM/Login")
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- //header -->
+    <div class="w3l-about1 pt-5" id="about">
+        <div class="container pt-lg-3">
+            @RenderBody()
+        </div>
+        </div>
+</body>
+</html>

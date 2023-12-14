@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="VaccineModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="daftar_vaksin">
+          <Key>
+            <PropertyRef Name="id_vaksin" />
+          </Key>
+          <Property Name="id_vaksin" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="id_registrasi" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="nama_vaksin" Type="varchar" MaxLength="225" Nullable="false" />
+          <Property Name="jenis_vaksin" Type="varchar" MaxLength="225" Nullable="false" />
+          <Property Name="jumlah" Type="varchar" MaxLength="225" Nullable="false" />
+          <Property Name="status_vaksin" Type="varchar" MaxLength="255" />
+        </EntityType>
+        <EntityContainer Name="VaccineModelStoreContainer">
+          <EntitySet Name="daftar_vaksin" EntityType="Self.daftar_vaksin" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="VaccineModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="daftar_vaksin">
+          <Key>
+            <PropertyRef Name="id_vaksin" />
+          </Key>
+          <Property Name="id_vaksin" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="id_registrasi" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="nama_vaksin" Type="String" MaxLength="225" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="jenis_vaksin" Type="String" MaxLength="225" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="jumlah" Type="String" MaxLength="225" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="status_vaksin" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityContainer Name="VaccineEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="daftar_vaksin" EntityType="Self.daftar_vaksin" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="VaccineModelStoreContainer" CdmEntityContainer="VaccineEntities">
+          <EntitySetMapping Name="daftar_vaksin">
+            <EntityTypeMapping TypeName="VaccineModel.daftar_vaksin">
+              <MappingFragment StoreEntitySet="daftar_vaksin">
+                <ScalarProperty Name="id_vaksin" ColumnName="id_vaksin" />
+                <ScalarProperty Name="id_registrasi" ColumnName="id_registrasi" />
+                <ScalarProperty Name="nama_vaksin" ColumnName="nama_vaksin" />
+                <ScalarProperty Name="jenis_vaksin" ColumnName="jenis_vaksin" />
+                <ScalarProperty Name="jumlah" ColumnName="jumlah" />
+                <ScalarProperty Name="status_vaksin" ColumnName="status_vaksin" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

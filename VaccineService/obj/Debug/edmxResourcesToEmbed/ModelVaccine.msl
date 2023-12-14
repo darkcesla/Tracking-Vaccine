@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="VaccineModelStoreContainer" CdmEntityContainer="VaccineEntities">
+    <EntitySetMapping Name="daftar_vaksin">
+      <EntityTypeMapping TypeName="VaccineModel.daftar_vaksin">
+        <MappingFragment StoreEntitySet="daftar_vaksin">
+          <ScalarProperty Name="id_vaksin" ColumnName="id_vaksin" />
+          <ScalarProperty Name="id_registrasi" ColumnName="id_registrasi" />
+          <ScalarProperty Name="nama_vaksin" ColumnName="nama_vaksin" />
+          <ScalarProperty Name="jenis_vaksin" ColumnName="jenis_vaksin" />
+          <ScalarProperty Name="jumlah" ColumnName="jumlah" />
+          <ScalarProperty Name="status_vaksin" ColumnName="status_vaksin" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

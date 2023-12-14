@@ -1,0 +1,59 @@
+﻿@model IEnumerable<BPOM.daftar_vaksin>
+
+@{
+    ViewBag.Title = "HomeVaksin";
+    Layout = "~/Views/_LayoutPage2.cshtml";
+}
+
+<h4>
+    Daftar Vaksin yang sudah di Lapor oleh Produsen
+</h4>
+<hr />
+<table class="table">
+    <tr>
+        <th>
+            ID Registrasi Vaksin
+        </th>
+        <th>
+            Nama Vaksin
+        </th>
+        <th>
+            Jenis Vaksin
+        </th>
+        <th>
+            Jumlah Vaksin
+        </th>
+        <th>
+            Status Vaksin
+        </th>
+        <th>
+            Aksi Memvalidasi
+        </th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.id_registrasi)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.nama_vaksin)
+        </td>
+        <td>
+            <b>
+                @Html.DisplayFor(modelItem => item.jenis_vaksin)
+            </b>
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.jumlah)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.status_vaksin)
+        </td>
+        <td>
+            @Html.ActionLink("Validasi", "EditVaksin", new { id=item.id_vaksin })
+        </td>
+    </tr>
+}
+
+</table>

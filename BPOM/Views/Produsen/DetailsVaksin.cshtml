@@ -1,0 +1,61 @@
+﻿@model BPOM.daftar_vaksin
+
+@{
+    ViewBag.Title = "DetailsVaksin";
+    Layout = "~/Views/_LayoutPage2Produsen.cshtml";
+}
+
+<div>
+    <h4>Detail Pembelian "@Html.DisplayFor(model => model.nama_vaksin)" </h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            ID Registrasi Vaksin
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.id_registrasi)
+        </dd>
+
+        <dt>
+            Nama Vaksin
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nama_vaksin)
+        </dd>
+
+        <dt>
+            Jenis Vaksin
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.jenis_vaksin)
+        </dd>
+
+        <dt>
+            Jumlah Vaksin
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.jumlah)
+        </dd>
+
+        <dt>
+            Status Vaksin
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.status_vaksin)
+        </dd>
+
+    </dl>
+</div>
+<div class="col-md-10">
+    <div class="btn btn-outline-success">
+        @Html.ActionLink("Edit", "EditVaksin", new { id = Model.id_vaksin })
+    </div>
+    <div class="btn btn-outline-primary">
+        @Html.ActionLink("Kembali", "Home")
+    </div>
+</div>
